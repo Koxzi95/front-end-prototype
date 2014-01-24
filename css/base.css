@@ -1,0 +1,9 @@
+
+.login {
+ 	position: fixed;
+	z-index: 2;
+	padding-top: 1000px;
+	padding-left: 25px;
+	margin: inherit;
+	float: left;
+}
