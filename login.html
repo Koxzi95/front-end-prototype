@@ -6,14 +6,19 @@
     <link rel="stylesheet" href="css/base.css" />
     <title>Untitled Document</title>
 </head>
+    <?php
+   // generate a new token for the $_SESSION superglobal and put them in a hidden field
+	$newToken = generateFormToken('input');   
+    ?>
 <body>
     <div class="login">
         <img src="img/logo.png" id="loginlogo" />
         <div class="container" >
-            <form name="input" action="do_something.asp" method="get">
-                User ID: <input type="text" name="user"><br>
-                Password: <input type="password" name="password">
-                <input type="submit" value="Login">
+            <form name="input" action="login.php" method="post" accept-charset="utf-8">
+                User ID: <input type="text" name="user" tabindex="1"><br>
+                Password: <input type="password" name="password" tabindex="2">
+                <input type="submit" value="Login" tabindex="3">
+                <input type="hidden" name="token" value="<?php echo $newToken; ?>">
             </form>
         </div>
     </div>
