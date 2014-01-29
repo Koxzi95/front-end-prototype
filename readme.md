@@ -14,4 +14,3 @@ This is the running build branch of the front end. Any releases and commits must
 - Add Metadata (if required)
 - Fix Login passthrough
 - Add login security
-- Remove autofill permanently 
