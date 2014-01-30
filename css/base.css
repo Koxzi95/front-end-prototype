@@ -34,6 +34,8 @@
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #528ecc;
+    margin-top:200px;
+    margin-left:200px;
 }
 .buttonsadmin:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
@@ -44,4 +46,3 @@
 	position:relative;
 	top:1px;
 }
-/* This button was generated using CSSButtonGenerator.com */
