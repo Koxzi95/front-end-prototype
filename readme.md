@@ -8,6 +8,10 @@ This is the running build branch of the front end. Any releases and commits must
 - This build only contains the basic html and css to make the website run, it will not do anything other than display the login screen.
 
 
+Changelog:
+- Added the admin panel (html)
+
+
 **To-Do:**
 
 - Add humans.txt
