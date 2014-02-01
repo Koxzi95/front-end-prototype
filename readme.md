@@ -10,11 +10,3 @@ This is the running build branch of the front end. Any releases and commits must
 
 Changelog:
 - Added the admin panel (html)
-
-
-**To-Do:**
-
-- Add humans.txt
-- Add Metadata (if required)
-- Fix Login passthrough
-- Add login security
