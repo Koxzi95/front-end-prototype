@@ -10,3 +10,13 @@ This is the running build branch of the front end. Any releases and commits must
 
 Changelog:
 - Added the admin panel (html)
+- Added jQuery (JS)
+- Added the home page (hmtl)
+
+
+
+**Issue** Compressed base.css changes color of the buttons?!?!?**
+
+
+
+*Before Upload remember to compress dev_folder*
