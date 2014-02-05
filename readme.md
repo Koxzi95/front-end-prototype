@@ -15,7 +15,7 @@ Changelog:
 
 
 
-**Issue** Compressed base.css changes color of the buttons?!?!?**
+**Issue**Compressed base.css changes color of the buttons?!?!?**
 
 
 

@@ -21,7 +21,7 @@ Location: City, Country.
 /* THANKS */
 
 							
-Name: name or url
+/*! jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
 
 						
                  
@@ -35,10 +35,10 @@ Name: name or url
 Last update: YYYY/MM/DD 
 
                             
-Standards: HTML5, CSS3,..
+Standards: HTML5, CSS3.
 
                             
-Components: Modernizr, jQuery, etc.
+Components: jQuery, 
 
                             
-Software: Software used for the development
+Software: Brackets, 
