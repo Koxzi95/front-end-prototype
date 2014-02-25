@@ -1,16 +1,20 @@
 /* TEAM */
 
                             
-Tom Cox: Development, Web Tech, 
+Tom Cox: Development, Web Tech Implementation.
+Site: about.me/coxtom
+Twitter: Koxzi95
+Location: Derby, England
 
-                            
-Site: email, link to a contact form, etc.
+Stacey Rees: Development, Design Implementation.
+Site:
+Twitter:
+Location: England
 
-                            
-Twitter: your Twitter username.
-
-                            
-Location: City, Country.
+Richard Mitchell: Development, Design, Testing.
+Site:
+Twitter:
+Location: England
 
                          
                  
@@ -34,10 +38,10 @@ Location: City, Country.
 Last update: YYYY/MM/DD 
 
                             
-Standards: HTML5, CSS3.
+Standards: HTML5, CSS3
 
                             
-Components: jQuery, 
+Components: jQuery, jQueryUI, VBScript
 
                             
-Software: Brackets, 
+Software: Brackets (favorite web dev tool), Sublime Text, Chrome, Photoshop
