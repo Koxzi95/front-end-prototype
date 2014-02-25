@@ -1,0 +1,54 @@
+/* This version of the CSS is for development only, and should be properly compressed before release */
+
+/* Font get */
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+
+/* Body */
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+/*Login Page*/
+#loginform {
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+    /* Other */
+    margin-top: 20%;
+}
+/* End of Login Page */
+.loginimg {
+    
+}
+
+#loginlogo {
+    position: absolute;
+    margin-left: -171px;
+    top: -96px;
+    left: 30%;
+    width: 343px;
+    height: 193px;
+    visibility: visible;
+}
