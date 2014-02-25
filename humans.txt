@@ -7,13 +7,9 @@ Twitter: Koxzi95
 Location: Derby, England
 
 Stacey Rees: Development, Design Implementation.
-Site:
-Twitter:
 Location: England
 
 Richard Mitchell: Development, Design, Testing.
-Site:
-Twitter:
 Location: England
 
                          
