@@ -31,7 +31,7 @@ Location: England
 /* SITE */
 
                             
-Last update: YYYY/MM/DD 
+Last update: YYYY/MM/DD         Also check the github commits @ https://github.com/Koxzi95/front-end-prototype/commits/master
 
                             
 Standards: HTML5, CSS3
