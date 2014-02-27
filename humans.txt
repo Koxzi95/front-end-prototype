@@ -6,10 +6,10 @@ Site: about.me/coxtom
 Twitter: Koxzi95
 Location: Derby, England
 
-Stacey Rees: Development, Design Implementation.
+Stacey Rees: Development, Design Implementation, SQL Database Design & Implementation.
 Location: England
 
-Richard Mitchell: Development, Design, Testing.
+Richard Mitchell: Development, Design, Testing, SQL Database Design & Implementation.
 Location: England
 
                          
@@ -31,7 +31,7 @@ Location: England
 /* SITE */
 
                             
-Last update: YYYY/MM/DD         Also check the github commits @ https://github.com/Koxzi95/front-end-prototype/commits/master
+Last update: YYYY/MM/DD         Also check the github commits/branches/releases @ https://github.com/Koxzi95/front-end-prototype/
 
                             
 Standards: HTML5, CSS3
