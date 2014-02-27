@@ -1,14 +1,12 @@
 /* This version of the CSS is for development only, and should be properly compressed before release */
- /* Body */
+/* Body */
 body {
-  background: white;
-  color: #222222;
-  padding: 0;
-  margin: 0;
-  font-family: Arial;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1;
-  position: relative;
-  cursor: default;
+    background: white;
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    line-height: 1;
+    position: relative;
+    cursor: default;
 }
