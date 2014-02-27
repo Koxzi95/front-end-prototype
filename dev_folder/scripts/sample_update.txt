@@ -1,0 +1,98 @@
+INSERT INTO Borrower_type Values ('BT01','Undergraduate student','5','12','21');
+INSERT INTO Borrower_type Values ('BT02','Postgraduate student','10','20','56');
+INSERT INTO Borrower_type Values ('BT03','Academic staff','10','20','240');
+INSERT INTO Borrower_type Values ('BT04','Non-academic staff','5','10','56');
+
+INSERT INTO Borrower Values ('B09001','BT01','Charlie','Mingus','45 Bird Street','Lexington','Kentucky','07789456132','charlie@underdog.jazz.com','Suspended');
+INSERT INTO Borrower Values ('B09002','BT03','Miles','Davis','11 Brew Street','Bloomington','Indiana','07513857593','brew@live-evil.com','Live');
+INSERT INTO Borrower Values ('B09003','BT02','Dizzy','Gillespie','1A Horn Row','Evington','Leics','07421823885','goldenhorn@yahoo.com','Suspended');
+INSERT INTO Borrower Values ('B09004','BT03','Ornette','Coleman','3 Lark Rise','Brickhill','Bedford','07983562147','ornette518@bebop.net','Live');
+INSERT INTO Borrower Values ('B10001','BT01','Pete','Townsend','1 The Manor','Kirby Bellars','Leics','07851521247','pete@who.co.uk','Live');
+INSERT INTO Borrower Values ('B10002','BT04','Keith','Moon','76 Sticks Avenue','Peckham','Sussex','07748562176','keith@who.co.uk','Suspended');
+INSERT INTO Borrower Values ('B10003','BT01','Grace','Slick','3 Fishermans Wharf','Dockside','City','07756542382','grace@starship.org','Live');
+INSERT INTO Borrower Values ('B10004','BT02','Barbara','Thompson','13 Railway Cuttings','Neasden','Surrey','07758549327','barbie@sax.co.uk','Live');
+INSERT INTO Borrower Values ('B10005','BT01','Harry','Hill','14 Elmdale','Knighton','Leicester','07798456213','harry@burp.co.uk','Live');
+INSERT INTO Borrower Values ('B10006','BT01','Jennifer','Aniston','The Beeches','Hamilton','Leicester','07583159573','jenny287@hotmail.com','Live');
+INSERT INTO Borrower Values ('B10007','BT03','John','Martyn','6 Woodbine Avenue','Leicester','Leics','07482213578','mjartyn@solidair.org','Suspended');
+INSERT INTO Borrower Values ('B10008','BT04','Dmitri','Shostakovich','17 Gorky Prospekt','Peredelkino','Moskva','07444351258','shosta@classical.fm.ru','Live');
+INSERT INTO Borrower Values ('B10009','BT01','Annie','Hall','5 Wall Street','New York','New York','07821551247','woody@hollywood.com','Live');
+INSERT INTO Borrower Values ('B10010','BT03','Khalil','Gibran','265 Kornesh El Nile','Cairo','Egypt','07756812476','prophet@maronite.org.lb','Live');
+INSERT INTO Borrower Values ('B10011','BT02','Sachin','Tendulkar','114 Marine Drive','Mumbai','India','07469518432','doublecentury@cricket.com','Live');
+INSERT INTO Borrower Values ('B10012','BT04','Nelson','Mandela','1 Eastern Boulevard','Cape Town','Republic of South Africa','07755945827','rainbow@anc.org.sa','Live');
+
+INSERT INTO Genre Values ('G001','SciFi');
+INSERT INTO Genre Values ('G002','Manga');
+INSERT INTO Genre Values ('G003','Humour');
+INSERT INTO Genre Values ('G004','Cyberpunk');
+INSERT INTO Genre Values ('G005','Thriller');
+
+INSERT INTO Book Values ('09946950','Carl Sagan','Contact','Pocket','1985','005.001','1','G001');
+INSERT INTO Book Values ('09952500','Orson Scott Card','Xenocide','Macmillan','1991','033.1198','1','G001');
+INSERT INTO Book Values ('45000918','Christopher Priest','Indoctrinaire','NEL','1973','033.1198','1','G001');
+INSERT INTO Book Values ('45002286','Frank Herbert','Dune','Ransom','1974','033.1198','1','G001');
+INSERT INTO Book Values ('45002303','Lionel Davidson','The Rose of Tibet','Gollancz','1962','033.1198','1','G005');
+INSERT INTO Book Values ('45057717','Fuyumi Soryo','Mars','Tokyopop','1993','022.33','1','G002');
+INSERT INTO Book Values ('55213326','Terry Pratchett','The Dark Side of the Sun','Colin Smythe Ltd','1988','017.0335','1','G003');
+INSERT INTO Book Values ('55213462','Terry Pratchett','Guards! Guards!','Corgi','1989','017.0335','1','G003');
+INSERT INTO Book Values ('55213703','Terry Pratchett','Good Omens','Corgi','1990','017.0335','1','G003');
+INSERT INTO Book Values ('58601080','Isaac Asimov','Foundation','Bantam','1960','033.1198','1','G001');
+INSERT INTO Book Values ('58601355','Isaac Asimov','Foundation and Empire','Bantam','1964','033.1198','1','G001');
+INSERT INTO Book Values ('58601713','Isaac Asimov','Second Foundation','Bantam','1962','033.1198','1','G001');
+INSERT INTO Book Values ('58605699','Arthur C Clarke','2010: Odyssey Two','Bantam','1982','033.1198','1','G001');
+INSERT INTO Book Values ('70884259','Bob Shaw','The Wooden Spaceships','Gollancz','1989','033.1198','1','G001');
+INSERT INTO Book Values ('70884440','Frank Herbert','The Ascension Factor','Ransom','1990','033.1198','1','G001');
+INSERT INTO Book Values ('70888059','Richard Morgan','Altered Carbon','Gollancz','2002','034.2166','1','G001');
+INSERT INTO Book Values ('70888267','Larry Niven','The Smoke Ring','Orbit','1988','033.1198','1','G001');
+INSERT INTO Book Values ('72216393','Larry Niven','Ringworld','Orbit','1973','033.1198','1','G001');
+INSERT INTO Book Values ('74930131','William Gibson','Neuromancer','Ace','1986','034.2166','1','G004');
+INSERT INTO Book Values ('86007906','Arthur C Clarke','Childhoods End','Ballantine','1970','033.1198','1','G001');
+
+INSERT INTO Reservation Values ('R0000001','17-SEP-10','15-OCT-10','B09004','45000918');
+INSERT INTO Reservation Values ('R0000002','22-OCT-10','03-NOV-10','B10005','58601080');
+INSERT INTO Reservation Values ('R0000003','18-NOV-10','','B10012','72216393');
+
+INSERT INTO Copy Values ('000000000009','Normal','Available','Good','09946950');
+INSERT INTO Copy Values ('000000000010','Short','Available','Good','09946950');
+INSERT INTO Copy Values ('000000000011','Normal','Available','Good','45002286');
+INSERT INTO Copy Values ('000000000012','Not for loan','Available','Good','45002286');
+INSERT INTO Copy Values ('000000000013','Normal','Available','Good','45057717');
+INSERT INTO Copy Values ('000000000014','Normal','Available','Good','55213326');
+INSERT INTO Copy Values ('000000000015','Short','Available','Good','55213326');
+INSERT INTO Copy Values ('000000000016','Normal','Available','Good','55213462');
+INSERT INTO Copy Values ('000000000017','Normal','Available','Good','55213462');
+INSERT INTO Copy Values ('000000000018','Normal','Available','Good','58601080');
+INSERT INTO Copy Values ('000000000019','Normal','Available','Good','58601080');
+INSERT INTO Copy Values ('000000000020','Not for loan','Available','Good','58601080');
+INSERT INTO Copy Values ('000000000021','Normal','Withdrawn','Damaged','58601355');
+INSERT INTO Copy Values ('000000000022','Not for loan','Available','Good','58601713');
+INSERT INTO Copy Values ('000000000023','Normal','Available','Good','58605699');
+INSERT INTO Copy Values ('000000000024','Normal','Available','Good','58605699');
+INSERT INTO Copy Values ('000000000025','Normal','Available','Good','70888059');
+INSERT INTO Copy Values ('000000000026','Not for loan','Withdrawn','Vandalised','70888059');
+INSERT INTO Copy Values ('000000000027','Normal','Available','Good','70888267');
+INSERT INTO Copy Values ('000000000028','Normal','Available','Good','70888267');
+INSERT INTO Copy Values ('000000000029','Short','Available','Good','74930131');
+INSERT INTO Copy Values ('000000000030','Not for loan','Available','Good','74930131');
+INSERT INTO Copy Values ('000000000031','Normal','Available','Good','74930131');
+INSERT INTO Copy Values ('000000000032','Normal','Lost','Good','86007906');
+INSERT INTO Copy Values ('000000000033','Normal','Available','Good','86007906');
+INSERT INTO Copy Values ('000000000034','Short','Available','Good','45000918');
+INSERT INTO Copy Values ('000000000035','Normal','Available','Good','58605699');
+INSERT INTO Copy Values ('000000000036','Normal','Available','Good','72216393');
+INSERT INTO Copy Values ('000000000037','Normal','Available','Good','72216393');
+
+INSERT INTO Loan Values ('LN000012','01-JUN-10','15-JUL-10','15-JUL-10','000000000013','B09001');
+INSERT INTO Loan Values ('LN000013','12-JUL-10','26-JUL-10','26-JUL-10','000000000024','B09002');
+INSERT INTO Loan Values ('LN000014','21-OCT-10','04-NOV-10','06-NOV-10','000000000029','B10001');
+INSERT INTO Loan Values ('LN000015','13-NOV-10','27-NOV-10','27-NOV-10','000000000033','B10002');
+INSERT INTO Loan Values ('LN000016','12-DEC-10','10-JAN-11','10-JAN-11','000000000013','B10005');
+INSERT INTO Loan Values ('LN000017','17-DEC-10','10-JAN-11','18-JAN-11','000000000022','B10010');
+INSERT INTO Loan Values ('LN000018','11-JAN-11','25-JAN-11','','000000000010','B10012');
+INSERT INTO Loan Values ('LN000019','14-JAN-11','28-JAN-11','28-JAN-11','000000000028','B10011');
+
+INSERT INTO Fine Values ('F0000001','04-NOV-10','2.00','PAID','B09001','LN000014');
+INSERT INTO Fine Values ('F0000002','10-JAN-11','6.50','PAID','B09002','LN000017');
+INSERT INTO Fine Values ('F0000003','25-JAN-11','4.50','DUE','B09004','LN000018');
+
+INSERT INTO Payment Values ('PMT00001','06-NOV-10','2.00','B09001','F0000001');
+INSERT INTO Payment Values ('PMT00002','10-JAN-11','6.50','B09002','F0000002');
