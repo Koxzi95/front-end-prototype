@@ -3,14 +3,13 @@
 This is the running build branch of the front end. Any releases and commits must be made to this branch unless stated otherwise.
 
 
-
 **Releases**
 
 *Pre-release version 0.1.0 'Skeleton'*
 - This build only contains the basic html and css to make the website run, it will not do anything other than display the login screen.
 ----------------------
 
-
+ALL DATABASE WORK SHOULD BE COMMITED TO THE GITHUB DATABRANCH, THEN RELEASE
 
 Need to Include:
 
@@ -41,4 +40,19 @@ ADD RESERVATION
 
 
 
-Get barebones working with database connection. SAVE AS SEPERATE RELEASE.
+Get barebones working with database connection. SAVE AS SEPERATE RELEASE (github release branch) THEN MAKE DESIGN CHANGES
+
+SCREENS REQUIRED:
+
+- Login (done)
+- homepage
+- adminpage
+- help
+- book catalogue (connect to book database table)
+- user management (conects to book database table)
+- fines (connects to fines database table)
+- reservations
+- payments
+- new loan
+- pop ups
+- loans
