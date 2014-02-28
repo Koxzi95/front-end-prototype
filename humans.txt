@@ -1,9 +1,9 @@
 /* TEAM */
 
                             
-Tom Cox: Development, Web Tech Implementation.
+Tom Cox: Development, Web Tech Implementation, Maintenance & Compiling/Testing.
 Site: about.me/coxtom
-Twitter: Koxzi95
+Twitter: @Koxzi95
 Location: Derby, England
 
 Stacey Rees: Development, Design Implementation, SQL Database Design & Implementation.
@@ -24,7 +24,7 @@ Location: England
 
 						
                  
-                        [...]
+                        [...] 
                         
 
                             
@@ -40,4 +40,4 @@ Standards: HTML5, CSS3
 Components: jQuery, jQueryUI, VBScript
 
                             
-Software: Brackets (favorite web dev tool), Sublime Text, Chrome, Photoshop
+Software: Brackets.io (favorite web dev tool), Atom.io (amazing beta tool by GitHub), Sublime Text 3, Chrome, Photoshop
