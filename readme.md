@@ -56,3 +56,5 @@ SCREENS REQUIRED:
 - new loan
 - pop ups
 - loans
+
+Quick note on animation: 
