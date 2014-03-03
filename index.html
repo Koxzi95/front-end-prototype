@@ -8,11 +8,22 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
     <body>
-        <img src="http://placehold.it/350x150" id="loginlogo" />
+        <img src="http://placehold.it/350x150" id="loginlogo" alt="QAL Logo" />
+        
+        <!-- this is the main login page for the website, the radio selectors are for either admin login or user login -->
+        
         <form id="loginform" class="animated " >
             <input type="text" id="useridbox" required="true" tabindex="1" autofocus="true" autocomplete="off" placeholder="User ID" /> <br />
             <input type="password" id="passwordbox" required="true" tabindex="2" autocomplete="off" placeholder="Password" /> <br />
+            <input type="radio" value="admin-radio-ver" name="login-veri-select" />Admin Login
+            <input type="radio" value="user-radio-ver" name="login-veri-select" checked="true" />User Login
             <input type="submit" id="loginsubmit" tabindex="3" />
         </form>
+        
+        <footer>
+        
+            
+        
+        </footer>
     </body>
 </html>
