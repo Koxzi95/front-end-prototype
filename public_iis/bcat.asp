@@ -4,8 +4,13 @@
          <title> Query Output </title>
    </head>
    <body>
-         <h1>And here are the results:-</h1>
-         <p>
+
+       
+       
+       <!-- HTML -->
+       
+       
+       
             <%
  
            Set DBConn = Server.CreateObject("ADODB.Connection")
