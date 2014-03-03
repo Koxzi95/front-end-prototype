@@ -40,4 +40,4 @@ Standards: HTML5, CSS3
 Components: jQuery, jQueryUI, VBScript
 
                             
-Software: Brackets.io (favorite web dev tool), Atom.io (amazing beta tool by GitHub), Sublime Text 3, Chrome, Photoshop
+Software: Brackets.io (favorite web dev tool), Atom.io (amazing in-beta tool by GitHub), Sublime Text 3, CodeKit Chrome, Firefox Photoshop
