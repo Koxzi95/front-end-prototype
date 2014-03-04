@@ -15,18 +15,20 @@
             <p id="pagetitle">Admin Panel</p>
         </header>
         <!-- these are all the buttons for the required actions on the admin panel -->
-        <button type="button" class="home-admin-buttons animated">User Management</button>
-        <button type="button" class="home-admin-buttons animated">New Loan</button>
-        <button type="button" class="home-admin-buttons animated">Loans</button>
-        <button type="button" class="home-admin-buttons animated">Payments</button>
-        <button type="button" class="home-admin-buttons animated">Reservations</button>
-        <button type="button" class="home-admin-buttons animated fadeIn">Fines</button>
-        
+        <div id="nav">
+            <form method="post" action="http://aspen.dmu.ac.uk/p13201420/bcat.asp"><button type="button" class="home-admin-buttons animated">User
+                Management</button></form>            
+            <form method="post" action="http://aspen.dmu.ac.uk/p13201420/nloan.asp"><button type="button" class="home-admin-buttons animated">New Loan</button></form>
+            <form method="post" action="http://aspen.dmu.ac.uk/p13201420/loans.asp"><button type="button" class="home-admin-buttons animated">Loans</button></form>
+            <form method="post" action="http://aspen.dmu.ac.uk/p13201420/paym.asp"><button type="button" class="home-admin-buttons animated">Payments</button></form>
+            <form method="post" action="http://aspen.dmu.ac.uk/p13201420/res.asp"><button type="button" class="home-admin-buttons animated">Reservations</button></form>
+            <button type="button" class="home-admin-buttons animated">Fines</button>
+        </div>
         <footer>
-            
-            <button onclick="location.href" >Help</button>
+            <form action="http://diywpblog.com/" method="get">
+                <button>Visit Website</button>
+            </form>
         
         </footer>
-        
     </body>
 </html>
