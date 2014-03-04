@@ -14,42 +14,39 @@ body {
 /* Buttons on Admin Panel & Home Page */
 button.home-admin-buttons {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #ffffff;
+	font-size: 14px;
+	color: #000;
 	padding: 10px 20px;
 	background: -moz-linear-gradient(
 		top,
-		#ad0f0c 0%,
-		#fa4655);
+		#ae100c  0%,
+		#ae100c );
 	background: -webkit-gradient(
 		linear, left top, left bottom,
-		from(#ad0f0c),
-		to(#fa4655));
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
-	border: 3px solid #050005;
+		from(#ae0f0c),
+		to(#ae0f0c));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #000000;
 	-moz-box-shadow:
-		0px 3px 11px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(26,8,24,1);
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
 	-webkit-box-shadow:
-		0px 3px 11px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(26,8,24,1);
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
 	box-shadow:
-		0px 3px 11px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(26,8,24,1);
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
 	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.2),
+		0px -1px 0px rgba(000,000,000,0.7),
 		0px 1px 0px rgba(255,255,255,0.3);
 }
 /* End of CSS3 Buttons */
+
+/*Logo Styling*/
 #headerlogo {
     position: absolute;
     top: 0px;
     right: 10px;
-}
-
-#pagetitle {
-    font-size: ;
-    
 }
