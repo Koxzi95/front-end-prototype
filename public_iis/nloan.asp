@@ -1,10 +1,14 @@
 <%@ Language=VBScript %>
  <html>
    <head>
-         <title> Query Output </title>
+         <title>QAL | New Loan</title>
    </head>
    <body>
-         <h1>And here are the results:-</h1>
+        <header>
+            <img src="http://placehold.it/350x150" id="headerlogo" alt="QAL Logo" />
+            <!-- header with title and logo set to right -->
+            <p id="pagetitle">Home Page</p>
+        </header>
          <p>
             <%
  
@@ -31,6 +35,11 @@
 QueryResult.Close
  DBConn.Close
  %>
+
+ <footer>
+     
+     
+ </footer>
  
  </body>
 </html>
