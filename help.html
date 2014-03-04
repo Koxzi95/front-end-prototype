@@ -62,9 +62,6 @@
               event[ prop ] = orig[ prop ];
             }
           }
-          // Prevent accessing the original event since the new event
-          // is fired asynchronously and the old event is no longer
-          // usable (#6028)
           delete event.originalEvent;
  
           target.trigger( event );
