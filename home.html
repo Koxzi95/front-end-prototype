@@ -8,18 +8,29 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
     <body>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script>
+        $("#navigation").change(function()
+        {
+        document.location.href = $(this).val();
+        });
+        </script>
         <header>
             <img src="http://placehold.it/350x150" id="headerlogo" alt="QAL Logo" />
             <!-- header with title and logo set to right -->
-            <p id="pagetitle">Admin Panel</p>
+            <p id="pagetitle">Home Page</p>
         </header>
+        
         <!-- these are all the buttons for the required actions on the user home page -->
-        <button type="button" name="#" value="#" class="home-admin-buttons">submit</button>
-        <button type="button" name="#" value="#" class="home-admin-buttons">submit</button>
-        <button type="button" name="#" value="#" class="home-admin-buttons">submit</button>
-        <button type="button" name="#" value="#" class="home-admin-buttons">submit</button>
-        <button type="button" name="#" value="#" class="home-admin-buttons">submit</button>
-        <button type="button" name="#" value="#" class="home-admin-buttons">submit</button>
+        <div id="navigation">
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">User Management</button>           
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">New Loan</button>
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">Loans</button>
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">Payments</button>
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">Reservations</button>
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">Fines</button>
+            <button class="home-admin-buttons" onClick="location.href = 'http://www.google.com'">Go to Google</button>
+        </div>
         
         <footer>
         
