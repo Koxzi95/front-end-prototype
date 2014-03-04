@@ -53,7 +53,7 @@ DROP TABLE Genre;
 -- Create a Database table to represent the "Borrower" entity.
 
 CREATE TABLE Borrower(
-	bor_id	CHARACTER(9) NOT NULL,
+	bor_id	CHARACTER(9) NOT NULL, -PK
 	fk1_bor_type_id	CHARACTER(4) NOT NULL,
 	bor_firstname	CHARACTER(20) NOT NULL,
 	bor_surname	CHARACTER(20) NOT NULL,
@@ -115,7 +115,7 @@ CREATE TABLE Genre(
 
 -- Create a Database table to represent the "Book" entity.
 CREATE TABLE Book(
-	isbn	CHARACTER(13) NOT NULL,
+	isbn	CHARACTER(13) NOT NULL, -PK
 	bk_author	CHARACTER(40) NOT NULL,
 	bk_title	CHARACTER(40) NOT NULL,
 	bk_publisher	CHARACTER(40),
