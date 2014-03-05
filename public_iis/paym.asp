@@ -7,7 +7,7 @@
         <header>
             <img src="http://placehold.it/350x150" id="headerlogo" alt="QAL Logo" />
             <!-- header with title and logo set to right -->
-            <p id="pagetitle">Home Page</p>
+            <p id="pagetitle">Payments</p>
         </header>
          <p>
             <%
