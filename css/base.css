@@ -50,3 +50,8 @@ button.home-admin-buttons {
     top: 0px;
     right: 10px;
 }
+
+/* Universal centering for div #navigation on the home and admin pages */
+#navigation {
+    
+}
