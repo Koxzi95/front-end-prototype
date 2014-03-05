@@ -6,7 +6,7 @@ Site: about.me/coxtom
 Twitter: @Koxzi95
 Location: Derby, England
 
-Stacey Rees: Development, Design Implementation, SQL Database Design & Implementation.
+Stacey Rees: Development, Design Implementation, SQL Database Design & Implementation, Code Manager.
 Location: England
 
 Richard Mitchell: Development, Design, Testing, SQL Database Design & Implementation.
