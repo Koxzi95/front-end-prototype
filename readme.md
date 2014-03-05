@@ -58,3 +58,5 @@ SCREENS REQUIRED:
 - loans
 
 Quick note on animation: 
+
+animated elements need to have the class="xxxxxxx animated ANIMATION"
