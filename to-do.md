@@ -5,8 +5,6 @@ to-do
 Master:
 	
 	Stylise website including data tables
-	Get all buttons linked
-
 
 On databranch (still live for release)
 	Get all data connections working with a test html page (take current .asps and link to buttons)
