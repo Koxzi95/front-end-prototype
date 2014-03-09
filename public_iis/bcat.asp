@@ -5,14 +5,10 @@
        <link rel="stylesheet" type="text/css" href="css/base.css">
    </head>
    <body>
-        <div class="headerdiv">
-        <header>
-            <img src="http://placehold.it/350x150" id="loginlogo" alt="QAL Logo" />
-            <!-- header with title and logo set to right -->
-            <h1 id="pagetitle">Book Catalogue</h1>
-        </header>
+        <div class="pageheader">
+            <img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right"> 
+            <h1>Admin Panel</h1>
         </div>
-       
        
        <!-- HTML -->
        
