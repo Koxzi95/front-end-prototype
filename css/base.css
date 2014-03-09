@@ -1,5 +1,5 @@
 /* This version of the CSS is for development only, and should be properly compressed before release */
-/* Body */
+/* body */
 body {
     background: white;
     color: #222222;
@@ -9,9 +9,9 @@ body {
     position: relative;
     cursor: default;
 }
-/* End of Body */
+/* end of body */
 
-/* Buttons on Admin Panel & Home Page */
+/* buttons on Admin Panel & Home Page */
 button.home-admin-buttons {
 	font-family: Arial, Helvetica;
 	font-size: 14px;
@@ -42,9 +42,9 @@ button.home-admin-buttons {
 		0px -1px 0px rgba(000,000,000,0.7),
 		0px 1px 0px rgba(255,255,255,0.3);
 }
-/* End of CSS3 Buttons */
+/* end of CSS3 Buttons */
 
-/* Universal Styling for tables */
+/* universal Styling for tables */
 td, th, tr {
   width: 4rem;
   height: 2rem;
@@ -55,42 +55,16 @@ th {
   background: lightblue;
   border-color: white;
 }
-/* End of table styling */
-}
+/* end of table styling */
 
-div#wrapperHeader {
- width:100%;
- height;200px; /* height of the background image? */
- background:url(img/banner.png) repeat-x 1 1;
- text-align:center;
-}
-
-div#wrapperHeader div#header {
- width:1000px;
- height:200px;
- margin:0 auto;
-}
-
-div#wrapperHeader div#header img {
- width:300px; /* the width of the logo image */
- height:150px; /* the height of the logo image */
- margin:0 auto;
-}
-
-
-/*
-#pagetitle {
-    font-family: sans-serif;
-    font-size: 36;
-}
-
-.headstyle {
+/*header styling */
+.pageheader {
     width: 100%;
-    color: #ae100c;
+    height: 300px;
 }
-
-.headerdiv {
-    background-color: #ae0f0c;
-    position: relative;
-    top: -10px; /*for height */
+.pageheader img {
+    margin-right: 20px;
+}
+.pageheader h1 {
+    font-size: 4em;
 }
