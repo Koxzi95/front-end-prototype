@@ -12,7 +12,7 @@ body {
 /* end of body */
 
 /* buttons on Admin Panel & Home Page */
-button.home-admin-buttons {
+button.home-admin-help-buttons {
 	font-family: Arial, Helvetica;
 	font-size: 14px;
 	color: #000;
@@ -61,10 +61,15 @@ th {
 .pageheader {
     width: 100%;
     height: 300px;
+    background-color: #ae0f0c;
 }
 .pageheader img {
     margin-right: 20px;
 }
 .pageheader h1 {
     font-size: 4em;
+    text-align: 
+}
+#navigation {
+    margin-left: 300px;
 }
