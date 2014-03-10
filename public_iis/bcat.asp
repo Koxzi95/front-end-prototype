@@ -12,40 +12,30 @@
        
        <!-- HTML -->
        
-        <%
+            <%
+            Set DBConn = Server.CreateObject("ADODB.Connection")
+            DBConn.Open "Driver={Oracle in OraClient11g_home1};DBQ=ORCL;UID=ops$p13201420;PWD=02-07-95;" 
+            Set QueryResult = DBConn.Execute("SELECT * FROM GENRE")
+            Response.Write "<table border=1 cellpadding=4><tr>"
+            For I = 0 To QueryResult.Fields.Count - 1
+            Response.Write "<td><b>" & QueryResult(I).name & "</b></td>"
+            Next
+            Response.Write "</tr>"
+            Do While Not QueryResult.EOF
+            Response.Write "<tr>"
+            For I = 0 To QueryResult.Fields.Count - 1
+            Response.Write "<td>" & QueryResult(I) & "</td>"
+            Next
+            Response.Write "</tr>"
+            QueryResult.MoveNext
+            Loop
+            Response.Write "</table>"
+            QueryResult.Close
+            DBConn.Close
+            %>
 
-        Set DBConn = Server.CreateObject("ADODB.Connection")
-        DBConn.Open "Driver={Oracle in OraClient11g_home1};DBQ=ORCL;UID=ops$p13201420;PWD=02-07-95;" 
-
-        Set QueryResult = DBConn.Execute("SELECT * FROM BOOK")
-
-        Response.Write "<table border=1 cellpadding=4><tr>"
-
-        For I = 0 To QueryResult.Fields.Count - 1
-          Response.Write "<td><b>" & QueryResult(I).name & "</b></td>"
-        Next
-
-        Response.Write "</tr>"
-
-        Do While Not QueryResult.EOF
-           Response.Write "<tr>"
-           For I = 0 To QueryResult.Fields.Count - 1
-              Response.Write "<td>" & QueryResult(I) & "</td>"
-           Next
-           Response.Write "</tr>"
-           QueryResult.MoveNext
-        Loop
-
-        Response.Write "</table>"
-
-        QueryResult.Close
-        DBConn.Close
-        %>
-
- <footer>
-   
-   
- </footer>
- 
+        <footer>
+            <button class="home-admin-buttons" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13201420/help.html'">uman.asp</button>
+        </footer>
 </body>
 </html>
