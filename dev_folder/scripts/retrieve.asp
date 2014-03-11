@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Oracle Retrieve</title>
-<link href="css/base.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <center>
