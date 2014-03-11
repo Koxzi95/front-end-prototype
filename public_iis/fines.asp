@@ -38,8 +38,10 @@
             %>
                 
 
-        <footer>
-            <button class="home-admin-buttons" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13201420/help.html'">uman.asp</button>
-        </footer>
+ <footer>
+     
+     
+ </footer>
+ 
 </body>
 </html>

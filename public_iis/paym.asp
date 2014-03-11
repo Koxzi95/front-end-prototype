@@ -6,7 +6,7 @@
    </head>
    <body>
         <div class="pageheader">
-            <img src="http://my.tech.dmu.ac.uk/~p13201420/img/logo.png" alt="Page Logo" height="175" width="325" align="right"> 
+            <img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right"> 
             <h1>Admin Panel</h1>
         </div>
             <%
@@ -32,8 +32,10 @@
             DBConn.Close
             %>
 
-        <footer>
-            <button class="home-admin-buttons" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13201420/help.html'">uman.asp</button>
-        </footer>
+ <footer>
+     
+     
+ </footer>
+ 
 </body>
 </html>

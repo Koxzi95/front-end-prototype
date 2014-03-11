@@ -16,7 +16,7 @@
             Set DBConn = Server.CreateObject("ADODB.Connection")
             DBConn.Open "Driver={Oracle in OraClient11g_home1};DBQ=ORCL;UID=ops$p13201420;PWD=02-07-95;" 
             Set QueryResult = DBConn.Execute("SELECT * FROM GENRE")
-            Response.Write "<table border=1 cellpadding=4><tr>"
+            Response.Write "<table border=1 cellpadding=4 id="tabletest"><tr>"
             For I = 0 To QueryResult.Fields.Count - 1
             Response.Write "<td><b>" & QueryResult(I).name & "</b></td>"
             Next
@@ -34,8 +34,10 @@
             DBConn.Close
             %>
 
-        <footer>
-            <button class="home-admin-buttons" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13201420/help.html'">uman.asp</button>
-        </footer>
+ <footer>
+   
+   
+ </footer>
+ 
 </body>
 </html>
