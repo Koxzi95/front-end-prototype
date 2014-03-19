@@ -1,167 +1,178 @@
 <!doctype html>
-
 <html>
-<head>
+  <head>
     <meta charset="UTF-8"> <!-- HTML5 shorthand declaration -->
     <title>QAL Library System | Help</title>
     <link href="humans.txt" rel="author">     <!-- humans.txt with author information -->
-    <link rel="stylesheet" type="text/css" href="/css/base.css"> <!-- custom made css controlling the site -->
+    <link rel="stylesheet" type="text/css" href="css/base.css"> <!-- custom made css controlling the site -->
     <!-- the next three lines control the UI elements of the page using jQuery UI -->
-   <!-- <link rel="stylesheet" type="text/css" href="/js/jquery-ui-custom/css/ui-lightness/jquery-ui-1.10.4.custom.min.css"> -->
-    <script src="js/jquery-ui-custom/js/jquery-1.10.2.js"></script>
-    <script src="js/jquery-ui-custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.custom.css">
+    <script src="js/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
     <!-- this script allows for the JS animations on the page collapsing the help sections -->
     <script>
-  $(function() {
+    //http://jqueryui.com/accordion/
+    $(function() {
+      //links to the navigation id
     $( "#accordion" ).accordion({
-      event: "click hoverintent"
+    event: "click hoverintent"
     });
-  });
-  $.event.special.hoverintent = {
+    });
+    $.event.special.hoverintent = {
     setup: function() {
-      $( this ).bind( "mouseover", jQuery.event.special.hoverintent.handler );
+      //mouseover
+    $( this ).bind( "mouseover", jQuery.event.special.hoverintent.handler );
     },
     teardown: function() {
-      $( this ).unbind( "mouseover", jQuery.event.special.hoverintent.handler );
+    $( this ).unbind( "mouseover", jQuery.event.special.hoverintent.handler );
     },
     handler: function( event ) {
-      var currentX, currentY, timeout,
-        args = arguments,
-        target = $( event.target ),
-        previousX = event.pageX,
-        previousY = event.pageY;
- 
-      function track( event ) {
-        currentX = event.pageX;
-        currentY = event.pageY;
-      };
- 
-      function clear() {
-        target
-          .unbind( "mousemove", track )
-          .unbind( "mouseout", clear );
-        clearTimeout( timeout );
-      }
- 
-      function handler() {
-        var prop,
-          orig = event;
- 
-        if ( ( Math.abs( previousX - currentX ) +
-            Math.abs( previousY - currentY ) ) < 7 ) {
-          clear();
- 
-          event = $.Event( "hoverintent" );
-          for ( prop in orig ) {
-            if ( !( prop in event ) ) {
-              event[ prop ] = orig[ prop ];
-            }
-          }
-          delete event.originalEvent;
- 
-          target.trigger( event );
-        } else {
-          previousX = currentX;
-          previousY = currentY;
-          timeout = setTimeout( handler, 100 );
-        }
-      }
- 
-      timeout = setTimeout( handler, 100 );
-      target.bind({
-        mousemove: track,
-        mouseout: clear
-      });
+    var currentX, currentY, timeout,
+    args = arguments,
+    target = $( event.target ),
+    previousX = event.pageX,
+    previousY = event.pageY;
+    
+    function track( event ) {
+    currentX = event.pageX;
+    currentY = event.pageY;
+    };
+    
+    function clear() {
+    target
+    .unbind( "mousemove", track )
+    .unbind( "mouseout", clear );
+    clearTimeout( timeout );
     }
-  };
-  </script>
-</head>
-<body>
-    <h2>QAL Library System Help</h2><!-- comp after, put in the first accordion static section -->
-    <div id="accordion">
-        <h3>General Help</h3>
-        <div id="general-help">
-            <p>
-                If on any of the screens you click a button and a message of 'You do not have the correct system access' appears this means you do not have admin
-                privilages.<br>
-                When finished using the system return to your home page, by using the return button on every page. Then click Sign Out located in the top right
-                corner.
-            </p>
-        </div>
-        <h3>Login</h3>
-        <div id="login-help">
-            <p>
-                You should use your provided UID and your personal password. If you have trouble logging in please contact ITMS @:x for help or to create an
-                account. If you have forgotten your password then use the Forgotten Password link on the login screen.<br>
-                Suspended Borrowers: If you have been suspended from the library for any reason, your login details will be invalid for the time of you
-                suspension and you will see this message 'Login Details Suspended'.
-            </p>
-        </div>
-        <h3>Admin Panel</h3>
-        <div id="admin-help">
-            <p>
-                The buttons on this page will take you to the relevant system section. If for any reason these do not work or are working incorrectly, please
-                contact ITMS @:x
-            </p>
-        </div>
-        <h3>Home Page</h3>
-        <div id="home-help">
-            <p>
-                The buttons on this page will take you to the relevant library section. If for any reason these do not work or are working incorrectly, please
-                contact ITMS @:x
-            </p>
-        </div>
-        <h3>Book Catalogue</h3>
-        <div id="bcat-help">
-            <p>
-                Search: This will allow you to search the entire book catalogue.<br>Add: This will allow you to add a new book to the catalogue.<br>Edit: This
-                will allow to you amend a books details in the catalogue.<br>Delete: This will allow you to delete a book from the system.
-            </p>
-        </div>
-        <h3>Fines</h3>
-        <div id="fine-help">
-            <p>
-                Search: This will allow you to search the entire outstanding fines of all registered library users.<br>Add: This will allow you to add a new fine
-                to the database.<br>Edit: This will allow to you amend fine details in the database.<br>Delete: This will allow you to delete a fine from the
-                system.
-            </p>
-        </div>
-        <h3>Loans</h3>
-        <div id="loan-help">
-            <p>Search: This will allow you to search for existing loans of all registered library users.<br>Edit: This will allow to you amend loan details in the
-                database.<br>Add: This will allow you to add a new loan to the database.<br>Delete: This will allow you to delete a loan from the system.
-            </p>
-        </div>
-        <h3>New Loan</h3>
-        <div id="new-loan-help">
-            <p>
-                Search Book: This button will allow you to search for a book.<br>Search User: This allows you to search for a specific user.<br>
-				Select Return Date: This wil allow you to pick a date to return the book, no longer than 3 weeks<br>Return: This will take you back to your main page.
-            </p>
-        </div>
-        <h3>Payments</h3>
-        <div id="payments-help">
-            <p>
-                Search: This will allow you to search the entire payment history of all registered library users.<br>Add: This will allow you to add a new payment
-                to the database.<br>Edit: This will allow to you amend payment details in the database.
-            </p>
-        </div>
-        <h3>Reservations</h3>
-        <div id="reservation-help">
-            <p>
-                Search: This will allow you to search all current reservations of all registered library users.<br>Add: This will allow you to add a new reservation
-                to the database.<br>Edit: This will allow to you amend reservation details in the database.<br>Delete: This will allow you to delete a reservation from the
-                system.
-            </p>
-        </div>
-        <h3>User Management</h3>
-        <div id="user-management-help">
-            <p>
-                Search: This will allow you to search all registered library users.<br>Add: This will allow you to add a new user
-                to the database.<br>Edit: This will allow to you amend user details in the database.<br>Delete: This will allow you to delete a user from the
-                system.
-            </p>
-        </div>
+    
+    function handler() {
+    var prop,
+    orig = event;
+    
+    if ( ( Math.abs( previousX - currentX ) +
+    Math.abs( previousY - currentY ) ) < 7 ) {
+    clear();
+    
+    event = $.Event( "hoverintent" );
+    for ( prop in orig ) {
+    if ( !( prop in event ) ) {
+    event[ prop ] = orig[ prop ];
+    }
+    }
+    delete event.originalEvent;
+    
+    target.trigger( event );
+    } else {
+    previousX = currentX;
+    previousY = currentY;
+    timeout = setTimeout( handler, 100 );
+    }
+    }
+    //timeouts for displaying and mouse tracking
+    timeout = setTimeout( handler, 100 );
+    target.bind({
+    mousemove: track,
+    mouseout: clear
+    });
+    }
+    };
+    </script>
+  </head>
+  <body>
+    <!-- contains the red strip, image and heaer/title -->
+    <div class="pageheader">
+      <img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+      <h1>QAL Library System Help</h1>
     </div>
-</body>
+    <!-- links to accordion js -->
+    <div id="accordion">
+      <h3>General Help</h3>
+      <div id="general-help">
+        <p>
+        If on any of the screens you click a button and a message of 'You do not have the correct system access' appears this means you do not have admin
+        privilages.<br>
+        When finished using the system return to your home page, by using the return button on every page. Then click Sign Out located in the top right
+        corner.
+        </p>
+      </div>
+      <h3>Login</h3>
+      <div id="login-help">
+        <p>
+        You should use your provided UID and your personal password. If you have trouble logging in please contact ITMS @:x for help or to create an
+        account. If you have forgotten your password then use the Forgotten Password link on the login screen.<br>
+        Suspended Borrowers: If you have been suspended from the library for any reason, your login details will be invalid for the time of you
+        suspension and you will see this message 'Login Details Suspended'.
+        </p>
+      </div>
+      <h3>Admin Panel</h3>
+      <div id="admin-help">
+        <p>
+        The buttons on this page will take you to the relevant system section. If for any reason these do not work or are working incorrectly, please
+        contact ITMS @:x
+        </p>
+      </div>
+      <h3>Home Page</h3>
+      <div id="home-help">
+        <p>
+        The buttons on this page will take you to the relevant library section. If for any reason these do not work or are working incorrectly, please
+        contact ITMS @:x
+        </p>
+      </div>
+      <h3>Book Catalogue</h3>
+      <div id="bcat-help">
+        <p>
+        Search: This will allow you to search the entire book catalogue.<br>Add: This will allow you to add a new book to the catalogue.<br>Edit: This
+        will allow to you amend a books details in the catalogue.<br>Delete: This will allow you to delete a book from the system.
+        </p>
+      </div>
+      <h3>Fines</h3>
+      <div id="fine-help">
+        <p>
+        Search: This will allow you to search the entire outstanding fines of all registered library users.<br>Add: This will allow you to add a new fine
+        to the database.<br>Edit: This will allow to you amend fine details in the database.<br>Delete: This will allow you to delete a fine from the
+        system.
+        </p>
+      </div>
+      <h3>Loans</h3>
+      <div id="loan-help">
+        <p>Search: This will allow you to search for existing loans of all registered library users.<br>Edit: This will allow to you amend loan details in the
+        database.<br>Add: This will allow you to add a new loan to the database.<br>Delete: This will allow you to delete a loan from the system.
+        </p>
+      </div>
+      <h3>New Loan</h3>
+      <div id="new-loan-help">
+        <p>
+        Search Book: This button will allow you to search for a book.<br>Search User: This allows you to search for a specific user.<br>
+        Select Return Date: This wil allow you to pick a date to return the book, no longer than 3 weeks<br>Return: This will take you back to your main page.
+        </p>
+      </div>
+      <h3>Payments</h3>
+      <div id="payments-help">
+        <p>
+        Search: This will allow you to search the entire payment history of all registered library users.<br>Add: This will allow you to add a new payment
+        to the database.<br>Edit: This will allow to you amend payment details in the database.
+        </p>
+      </div>
+      <h3>Reservations</h3>
+      <div id="reservation-help">
+        <p>
+        Search: This will allow you to search all current reservations of all registered library users.<br>Add: This will allow you to add a new reservation
+        to the database.<br>Edit: This will allow to you amend reservation details in the database.<br>Delete: This will allow you to delete a reservation from the
+        system.
+        </p>
+      </div>
+      <h3>User Management</h3>
+      <div id="user-management-help">
+        <p>
+        Search: This will allow you to search all registered library users.<br>Add: This will allow you to add a new user
+        to the database.<br>Edit: This will allow to you amend user details in the database.<br>Delete: This will allow you to delete a user from the
+        system.
+        </p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <br><br>
+    <button class="buttons" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+  </footer>
 </html>
