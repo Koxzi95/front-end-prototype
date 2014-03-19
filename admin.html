@@ -8,31 +8,35 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
     <body>
-        <script src="js/jquery-2.1.0.min.js"></script>
         <script>
+        //handler for the navigation div, helps with page direction
         $("#navigation").change(function()
         {
         document.location.href = $(this).val();
         });
         </script>
         <div class="pageheader">
-            <img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right"> 
+            <img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
             <h1>Administration Management</h1>
         </div>
-		<header>
-		<button class="home-admin-buttons" id="btnsignout" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13201420/index.html'">&nbspSign Out&nbsp</button>
-		</header>
+        <header>
+            <button class="buttons" id="btnsignout" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/index.html'">&nbspSign Out&nbsp</button>
+        </header>
+        <p class="welcome"> Welcome to the QAL Library Administration Management System </p>
         <!-- these are all the buttons for the required actions on the admin panel -->
         <div id="navigation">
-            <button class="home-admin-buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13201420/bcat.asp'">&nbspBook Catalogue&nbsp</button>
-            <button class="home-admin-buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13201420/fines.asp'">&nbspFines&nbsp</button>
-            <button class="home-admin-buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13201420/loans.asp'">&nbspLoans&nbsp</button>
-            <button class="home-admin-buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13201420/paym.asp'">&nbspPayments&nbsp</button>
-            <button class="home-admin-buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13201420/res.asp'">&nbspReservations&nbsp</button>
-            <button class="home-admin-buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13201420/uman.asp'">&nbspUser Management&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13198051/bcat.asp'">&nbspBook Catalogue&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13198051/fines.asp'">&nbspFines&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'logreturn.html'">&nbspLog Return&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'issueloan.html'">&nbspNew Loan&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13198051/res.asp'">&nbspReservations&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13198051/uman.asp'">&nbspUser Management&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'http://aspen.dmu.ac.uk/p13198051/paym.asp'">&nbspPayments&nbsp</button>
+            <button class="buttons" id="btnClear" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/searchloans.html'">&nbspSearch Loans&nbsp</button>
         </div>
         <footer>
-        <button class="home-admin-buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13201420/help.html'">&nbspHelp&nbsp</button>
+			<!--inserts  help button-->
+            <button class="buttons" id="help" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
         </footer>
     </body>
 </html>
