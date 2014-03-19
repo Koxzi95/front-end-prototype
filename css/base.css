@@ -1,93 +1,309 @@
 /* This version of the CSS is for development only, and should be properly compressed before release */
 /* body */
-body {
-    background: white;
-    color: #222222;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    position: relative;
-    cursor: default;
+body
+{
+	background:#fff;
+	color:#222;
+	padding:0;
+	margin:0;
+	font-family:sans-serif;
+	position:relative;
+	cursor:default
+}
+
+#bodyindex
+{
+	background:#ae100c;
+	color:#222;
+	padding:0;
+	margin:0;
+	font-family:sans-serif;
+	position:relative;
+	cursor:default
 }
 /* end of body */
 
-/* buttons on Admin Panel & Home Page */
-button.home-admin-buttons {
-	font-family: Arial, Helvetica;
-	font-size: 14px;
-	color: #000;
-	padding: 10px 20px;
-	background: -moz-linear-gradient(
-		top,
-		#ae100c  0%,
-		#ae100c );
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#ae0f0c),
-		to(#ae0f0c));
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	border: 1px solid #000000;
-	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	-webkit-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.7),
-		0px 1px 0px rgba(255,255,255,0.3);
+/* buttons*/
+button.buttons
+{
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#ae0f0c),to(#ae0f0c));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3)
 }
+
+button.buttonsasp
+{
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#ae0f0c),to(#ae0f0c));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3);
+	margin-left:1000px;
+	display:block;
+	margin-top:20px
+}
+
+button.buttonsRH
+{
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#ae0f0c),to(#ae0f0c));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3);
+	margin-left:60px;
+	display:block;
+	margin-top:20px
+}
+
 /* end of CSS3 Buttons */
 
 /* universal Styling for tables */
-td, th, tr {
-  width: 4rem;
-  height: 2rem;
-  border: 1px solid #ccc;
-  text-align: center;
+td,th,tr
+{
+	height:2rem;
+	border:solid #ae0f0c;
+	text-align:center;
+	border-width:2px
 }
-th {
-  background: lightblue;
-  border-color: white;
-}
+
 /* end of table styling */
 
 /*header styling */
-.pageheader {
-    width: 100%;
-    height: 175px;
-    background-color: #ae0f0c;
-	margin-top: -50px;
-	z-index: 0;
-}
-.pageheader img {
-    margin-right: 0px;
-}
-.pageheader h1 {
-    font-size: 4em;
-	z-index: 1;
-	text-align: center;
-	padding-top: 40px;
-}
-#navigation {
-    margin-left: 400px;
-	margin-top: 326px;
+.pageheader
+{
+	width:100%;
+	height:175px;
+	background-color:#ae0f0c;
+	margin-top:-50px;
+	z-index:0
 }
 
-#btnClear {
-	margin-left:60px;
+.pageheader img
+{
+	margin-right:0
 }
 
-#btnHelp  {
-	float: right;
-	margin-top: 500px;
+.pageheader h1
+{
+	font-size:4em;
+	z-index:1;
+	text-align:center;
+	padding-top:40px
+}
+/*end fo header*/
+
+#navigation
+{
+	margin-left:200px;
+	margin-top:250px
 }
 
-#btnsignout {
-	float: right;
+#btnClear
+{
+	margin-left:60px
+}
+
+#btnHelp
+{
+	margin-left:1700px;
+	margin-top:350px
+}
+
+#btnRtn
+{
+	margin-left:1700px
+}
+
+#help
+{
+	float:left;
+	margin-top:350px
+}
+
+#btnsignout
+{
+	float:right
+}
+
+input[type=submit]
+{
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	margin-top:20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#ae0f0c),to(#ae0f0c));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3)
+}
+
+input[type=text]
+{
+	margin-top:10px
+}
+
+.formlogin
+{
+	margin-left:750px;
+	margin-top:130px
+}
+
+#useridbox
+{
+	margin-left:80px
+}
+
+#passwordbox
+{
+	margin-left:80px
+}
+
+#userradio
+{
+	margin-left:5px
+}
+
+#adminradio
+{
+	margin-left:5px
+}
+
+#loginsubmit
+{
+	margin-left:130px;
+	margin-top:30px;
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#D7D5CB),to(#D7D5CB));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3)
+}
+
+#helplogin
+{
+	float:left;
+	margin-top:350px;
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#D7D5CB),to(#D7D5CB));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3)
+}
+
+.welcome
+{
+	font-weight:700;
+	font-size:19px;
+	margin-top:60px;
+	margin-left:300px
+}
+
+#input-style
+{
+	display:inline-block;
+	margin-top:15px;
+	margin-left:10px
+}
+
+#datepicker
+{
+	display:inline-block;
+	margin-top:15px;
+	margin-left:10px
+}
+
+label
+{
+	display:inline-block;
+	float:left;
+	clear:left;
+	width:200px;
+	text-align:right;
+	margin-top:15px
+}
+
+.form
+{
+	position:absolute;
+	margin-left:35%;
+	margin-top:0;
+	width:390px
+}
+
+input[type=reset]
+{
+	font-family:Arial,Helvetica;
+	font-size:14px;
+	color:#000;
+	padding:10px 20px;
+	margin-top:20px;
+	background:-moz-linear-gradient(top,#ae100c 0%,#ae100c);
+	background:-webkit-gradient(linear,left top,left bottom,from(#ae0f0c),to(#ae0f0c));
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #000;
+	-moz-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	-webkit-box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	box-shadow:0 1px 3px rgba(000,000,000,0.5),inset 0 0 1px rgba(255,255,255,1);
+	text-shadow:0 -1px 0 rgba(000,000,000,0.7),0 1px 0 rgba(255,255,255,0.3)
+}
+
+#signinname
+{
+	margin-left:1595.5px
 }
