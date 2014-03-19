@@ -3,27 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <title>QAL Library System | Login</title>
+        <!-- this script takes the user to the relavent page depending on radio button selection -->
+        <script>
+        function OpenWindow(){
+        for(i=0;i<document.FormName["login-veri-select"].length;i++){
+        if(document.FormName["login-veri-select"][i].checked){
+        window.location.assign(document.FormName["login-veri-select"][i].value);
+        break;
+        }
+        }
+        }
+        </script>
+		<!-- links to the css's -->
         <link rel="author" href="humans.txt"/>
         <link rel="stylesheet" type="text/css" href="css/base.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
-    <body>
-        
-        <img src="http://placehold.it/350x150" id="loginlogo" alt="QAL Logo" />
-        <!-- this is the main login page for the website, the radio selectors are for either admin login or user login -->
-        
-        <form method="post" id="loginform" class="animated " >
-            <input type="text" id="useridbox" required="true" tabindex="1" autofocus="true" autocomplete="off" placeholder="User ID" /> <br />
-            <input type="password" id="passwordbox" required="true" tabindex="2" autocomplete="off" placeholder="Password" /> <br />
-            <input type="radio" value="admin.html" name="login-veri-select" />Admin Login
-            <input type="radio" value="user.html" name="login-veri-select" checked="true" />User Login
-            <input type="submit" id="loginsubmit" tabindex="3" />
-        </form>
-        
+    <body id="bodyindex">
+        <div class="formlogin">
+            <img src="img/logo.png" alt="Page Logo" height="175" width="325">
+            <!-- this is the main login page for the website, the radio selectors are for either admin login or user login -->
+            <br />
+            <form method="post" id="loginform" class="animated" name="FormName" >
+                <input type="text" id="useridbox" required="true" tabindex="1" autofocus="true" autocomplete="off" placeholder="User ID" /> <br />
+                <input type="password" id="passwordbox" required="true" tabindex="2" autocomplete="off" placeholder="Password" /> <br /> <br />
+                <input type="radio" id="adminradio" value="admin.html" name="login-veri-select" />Management Login <br />
+                <input type="radio" id="staffradio" value="cstaff.html" name="login-veri-select" />Counter Staff Login <br />
+                <input type="radio" id="userradio" value="home.html" name="login-veri-select" checked="true" />User Login <br />
+                <input type="button" id="loginsubmit" tabindex="3"  value="Login" onclick="OpenWindow()" />
+            </form>
+            <br />
+            <p> Forgotten Your Password? Please Click Here. </p>
+        </div>
         <footer>
-        
-            
-        
+			<!-- inserts help buttons -->
+            <button class="buttons" id="helplogin" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
         </footer>
     </body>
 </html>
