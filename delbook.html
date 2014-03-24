@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Delete Book</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Delete Book</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="suc_del.html"></br>
+				<!--creates the input controls for deleting a book -->
+				<label for="isbn_input">ISBN:</label><input name="isbn_input" type="text" size="20" id="input-style"></br>
+				<br><br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Delete">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!--inserts help and return buttons -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>
