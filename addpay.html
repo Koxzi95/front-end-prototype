@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Add Payment</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Add Payment</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="suc_add.html"></br>
+				<!--creates the input controls for adding a payment to the database -->
+				<label for="pmt_id_input">Payment ID:</label><input name="pmt_id_input" type="text" size="20" id="input-style"></br>
+				<label for="pmt_date_input">Payment Date:</label> <input name="payment_date_input" type="text" size="20" id="input-style"></br>
+				<label for="pmt_amount_input">Payment Amount:</label> <input name="pmt_amount_input" type="text" size="20" id="input-style"></br>
+				<label for="bor_id_input">Borrower ID:</label> <input name="bor_id_input" type="text" size="20" id="input-style">	</br>
+				<label for="fine_id_input">Fine ID:</label> <input name="fine_id_input" type="text" size="20" id="input-style"></br>
+				<br><br>
+				<p>If paying by card, please complete the following</p>
+				<label for="cardtype">Card Type:</label>
+				<select name="cardtype" id="input-style">
+					<option value="c1">Visa</option>
+					<option value="c2">Electron</option>
+					<option value="c3">AMEX</option>
+					<option value="c4">Mastercard</option>
+				</select>
+				<label for="cardname">Cardholder Name:</label> <input name="cardname" type="text" size="20" id="input-style"></br>
+				<label for="cardno">Card No:</label><input name="cardno" type="text" size="20" id="input-style"></br>
+				<label for="expiry">Expiry Date:</label> <input name="expiry" type="text" size="20" id="input-style"></br>
+				<label for="cvc">Security Code:</label> <input name="cvc" type="text" size="20" id="input-style">	</br>
+				<label for="fine_id_input">Fine ID:</label> <input name="fine_id_input" type="text" size="20" id="input-style"></br>
+				<br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="makepayment"  type="submit" value="Make Payment">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</form>
+	</div>
+	<footer>
+		<!--inserts return and help buttons-->
+		<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+		<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+	</footer>
+</body>
+</html>
