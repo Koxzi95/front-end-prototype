@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Place Reservation</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Place Reservations</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="suc_add.html"></br>
+				<!--creates the input controls for adding a reservation to the database -->
+				<label for="res_id_input">Reservation ID:</label><input name="res_id_input" type="text" size="20" id="input-style" value="R022565323" readonly></br>
+				<label for="res_date_input">Reservation Date:</label> <input name="res_date_input" type="text" size="20" id="input-style"></br>
+				<label for="isbn_input">ISBN:</label> <input name="isbn_input" type="text" size="20" id="input-style"></br>
+				<br><br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Add">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!--inserts return and help buttons-->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>
