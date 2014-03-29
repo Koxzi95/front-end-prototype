@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Book Search</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Search Books</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="http://aspen.dmu.ac.uk/p13198051/searchloans.asp">
+				<!-- creates a text input box for the user search for loans -->
+				<label for="borrower_id_input"> Borrower No: <input name="borrower_id_input" type="text" id="input-style" size="20" >
+					<label for="loan_id_input">Loan ID:</label><input name="loan_id_input" type="text" size="20" id="input-style"></br>
+					<label for="loan_issue_date_input">Loan Issue Date:</label> <input name="loan_issue_date_input" type="text" size="20" id="input-style"></br>
+					<label for="loan_return_date">Loan Return Date:</label> <input name="loan_return_date" type="text" size="20" id="input-style"></br>
+					<label for="copy_barcode_input">Copy Barcode:</label> <input name="copy_barcode_input" type="text" size="20" id="input-style"></br>
+					<br><br>
+					<!--creates the submit and reset buttons-->
+					<input name="Edit" type="submit" value="Search Loans">
+					<input name="Clear" type="reset">
+				</form>
+			</div>
+			<footer>
+				<!-- inserts back and help buttons -->
+				<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+				<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+			</footer>
+		</body>
+	</html>

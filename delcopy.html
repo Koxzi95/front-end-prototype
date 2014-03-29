@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Delete Copy</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Delete Copy</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="suc_del.html"></br>
+				<!--creates the input controls for deleting a book copy -->
+				<label for="isbn_input">ISBN:</label><input name="isbn_input" type="text" size="20" id="input-style"></br>
+				<label for="copies_to_del">No Of Copies to Delete:</label>
+				<select name="copies_to_add" id="input-style">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select></br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Delete">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!-- inserts back and help buttons -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>

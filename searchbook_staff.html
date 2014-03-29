@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Book Search</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Search Books</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="http://aspen.dmu.ac.uk/p13198051/bcat_staff.asp"></br>
+				<!--creates the input controls for searching for a book -->
+				<label for="isbn_input">ISNB:</label><input name="isbn_input" type="text" size="20" id="input-style"></br>
+				<label for="title_input">Title:</label><input name="title_input" type="text" size="20" id="input-style"></br>				
+				<label for="author_input">Author:</label> <input name="author_input" type="text" size="20" id="input-style"></br>
+				<label for="publisher_input">Publisher:</label> <input name="publisher_input" type="text" size="20" id="input-style"></br>
+				<label for="pub_yr_input">Publish Year:</label> <input name="pub_yr_input" type="text" size="20" id="input-style"></br>
+				<label for="shelf_no_input">Shelf No:</label><input name="shelf_no_input" type="text" size="20" id="input-style"></br>
+				<label for="gcode_input">Genre Code:</label><input name="gcode_input" type="text" size="20" id="input-style"></br>				
+				<label for="edition_no_input">Edition No:</label><input name="edition_no_input" type="text" size="20" id="input-style"></br>
+				<br><br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Search">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!-- inserts back and help buttons -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>

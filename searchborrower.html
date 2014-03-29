@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Search For Borrower</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Search For Borrower</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="http://aspen.dmu.ac.uk/p13198051/bor_search_results.asp"></br>
+				<!--creates the input controls for searching for a borrower -->
+				<label for="bor_id_input">Borrower ID:</label><input name="bor_id_input" type="text" size="20" id="input-style"></br>
+				<label for="bor_firstname_input">First name:</label> <input name="bor_firstname_input" type="text" size="20" id="input-style" readonly></br>
+				<label for="bor_surname_input">Sur name:</label> <input name="bor_surname_input_input" type="text" size="20" id="input-style"readonly></br>
+				<label for="bor_add_1_input">Address 1:</label> <input name="bor_add_1_input" type="text" size="20" id="input-style" readonly>	</br>
+				<label for="bor_add_2_input">Address 2:</label><input name="bor_add_2_input" type="text" size="20" id="input-style" readonly></br>
+				<label for="bor_tel_input">Telephone:</label> <input name="bor_tel_input" type="text" size="20" id="input-style" readonly>	</br>
+				<label for="bor_email_input">Email Address:</label> <input name="bor_email_input" type="text" size="20" id="input-style" readonly></br>
+				<label for="bor_status_input">Borrower Status:</label> <input name="bor_status_input" type="text" size="20" id="input-style" readonly></br>
+				
+				<br><br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Search">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!-- inserts back and help buttons -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>

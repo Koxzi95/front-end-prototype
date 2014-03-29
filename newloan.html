@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>QAL | New Loan</title>
+		<!--connects to the style sheets -->
+		<link rel="stylesheet" type="text/css" href="https://my.tech.dmu.ac.uk/~p13201420/css/base.css">
+		<link rel="stylesheet" href="https://my.tech.dmu.ac.uk/~p13201420/js/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.custom.css">
+		<!--links to the jquery -->
+		<script src="https://my.tech.dmu.ac.uk/~p13201420/js/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script>
+		<script src="https://my.tech.dmu.ac.uk/~p13201420/js/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script>
+		<!--sets up the datepicker script -->
+		<script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+	</head>
+	<body>
+		<div class="pageheader">
+			<img src="https://my.tech.dmu.ac.uk/~p13201420/img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>New Loan</h1>
+		</div>
+		<!--creates the form for logging returns -->
+		<form id="log-return">
+			<p>Loan ID<input type="text" placeholder="Loan ID"></p>
+			<p>Date: <input type="text" placeholder="Date of Return" readonly="true" id="datepicker"></p>
+			<input type="submit">
+		</form>
+	</body>
+</html>

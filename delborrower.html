@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Delete Borrower</title>
+		<!--link to the cascading style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--inserts the QAL logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Delete a Borrower</h1>
+		</div>
+		<br>
+		<div class ="form">
+			<!--creates a form for the user to input the borrower number - links to the corresponding asp page -->
+			<form method="post" action="http://aspen.dmu.ac.uk/p13198051/delborrower.asp">
+				<!-- creates the input text box for the borrower number-->
+				Borrower Number: <input name="borrower_id_input" type="text" >
+				<br><br>
+				<!--creates the submit and reset buttons-->
+				<input name="delete" type="submit" value="Delete User">
+				<input name="Clear" type="reset">
+			</form>
+		</div>
+		<footer>
+			<!--inserts help and back button -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>

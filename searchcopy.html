@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Search Copy</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Search Copy</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="http://aspen.dmu.ac.uk/p13198051/copy.asp"></br>
+				<!--creates the input controls for searching for a copy -->
+				<label for="coy_barcode">Copy Barcode:</label><input name="coy_barcode" type="text" size="20" id="input-style"></br>
+				<label for="loan_type">Loan Type:</label>
+				<select name="Loan Type" id="input-style">
+					<option value="blank"></option>
+					<option value="Normal">Normal</option>
+					<option value="Short">Short</option>
+					<option value="NotForLoan">Not For Loan</option>
+				</select></br>
+				<label for="status">Status:</label>
+				<select name="Status" id="input-style">
+					<option value="blank"></option>
+					<option value="Available">Available</option>
+					<option value="Unavailable">Unavailable</option>
+					<option value="Withdrawn">Withdrawn</option>
+					<option value="Lost">Lost</option>
+				</select></br>
+				<label for="condition">Condition:</label>
+				<select name="Condition" id="input-style">
+					<option value="blank"></option>
+					<option value="Good">Good</option>
+					<option value="Poor">Poor</option>
+					<option value="Damaged">Withdrawn</option>
+				</select></br>
+				<label for="isbn">ISBN:</label><input name="isbn" type="text" size="20" id="input-style"></br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Search">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!-- inserts back and help buttons -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>

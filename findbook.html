@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Find a book</title>
+		<!--link to the style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+	</head>
+	<body>
+		<div class="pageheader">
+			<!--insert logo-->
+			<img src="img/logo.png" alt="Page Logo" height="175" width="325" align="right">
+			<h1>Find A Book</h1>
+		</div>
+		<br />
+		<div class="form">
+			<!--declare a form which links to the asp page for the function-->
+			<form method="post" action="http://aspen.dmu.ac.uk/p13198051/bcat.asp"></br>
+				<!--creates the input controls for finding a book-->
+				<label for="isbn_input">ISBN:</label><input name="isbn_input" type="text" size="20" id="input-style"></br>
+				<label for="bk_author_input">Author:</label> <input name="bk_author_input" type="text" size="20" id="input-style"></br>
+				<label for="bk_title_input">Title:</label> <input name="bk_title_input" type="text" size="20" id="input-style"></br>
+				<label for="bk_publisher_input">Publisher:</label> <input name="bk_publisher_input" type="text" size="20" id="input-style">	</br>
+				<label for="bk_pub_yr_input">Book Publish Year:</label><input name="bk_pub_yr_input" type="text" size="20" id="input-style"></br>
+				<label for="bk_shelf_no_input">Shelf No:</label> <input name="bk_shelf_no_input" type="text" size="20" id="input-style">	</br>
+				<label for="bk_edition_no_input">Edition No:</label> <input name="bk_edition_no_input" type="text" size="20" id="input-style">	</br>
+				<label for="bk_genre_code_input">Genre Code:</label>
+				<select name="bk_genre_code_input" id="input-style">
+					<option value="G001">SciFi</option>
+					<option value="G002">Manga</option>
+					<option value="G003">Humour</option>
+					<option value="G004">CyberPunk</option>
+					<option value="G005">Thriller</option>
+				</select>
+				<br><br>
+				<!--creates the submit and reset buttons for the user to complete the form-->
+				<input name="Save Changes"  type="submit" value="Find">
+				<input name="Save Changes"  type="reset" value="Clear">
+			</form>
+		</div>
+		<footer>
+			<!-- inserts back and help buttons -->
+			<button class="buttons" id="btnHelp" onClick="location.href = 'http://my.tech.dmu.ac.uk/~p13198051/help.html'">&nbspHelp&nbsp</button>
+			<button class="buttons" id="btnRtn" onClick="history.go(-1);return true;">&nbspReturn&nbsp</button>
+		</footer>
+	</body>
+</html>
