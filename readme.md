@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **Readme for Master branch of the front-end-prototype**
 
 This is the running build branch of the front end. Any releases and commits must be made to this branch unless stated otherwise.
@@ -60,3 +61,6 @@ SCREENS REQUIRED:
 Quick note on animation: 
 
 animated elements need to have the class="xxxxxxx animated ANIMATION"
+=======
+.
+>>>>>>> FETCH_HEAD
